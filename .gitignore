@@ -1,0 +1,13 @@
+backend/.env
+langgraph_agent/.env
+backend/benv/*
+datascience_engine/ds_env/
+frontend/webapp/node_modules/
+langgraph_agent/langgraph_env/
+.python-version
+backend/db.sqlite3
+
+.pyc
+langgraph_agent/__pycache__
+datascience_engine/__pycache__
+frontend/webapp/public
