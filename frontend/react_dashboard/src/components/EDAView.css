@@ -1,0 +1,258 @@
+.eda-modal {
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.eda-content {
+  margin-top: 2rem;
+}
+
+.dataset-overview {
+  margin-bottom: 2rem;
+}
+
+.overview-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.stat-value {
+  color: #3498db;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.column-analysis {
+  margin-bottom: 2rem;
+}
+
+.columns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.column-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.column-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.column-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.model-actions {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.intelligent-suggestions {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.intelligent-suggestions h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+}
+
+.suggestions-content {
+  margin-top: 1rem;
+}
+
+.best-recommendation {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.best-recommendation h5 {
+  margin: 0 0 0.5rem 0;
+  color: #f39c12;
+}
+
+.best-recommendation p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.recommended-models {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.recommended-models h5 {
+  margin: 0 0 0.5rem 0;
+  color: #3498db;
+}
+
+.recommended-models ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.recommended-models li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.recommended-models p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Model selection styling */
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ecf0f1;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background: white;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 0.25rem;
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* Problem type indicator */
+.problem-type-indicator {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.problem-type-indicator.classification {
+  background: #3498db;
+  color: white;
+}
+
+.problem-type-indicator.regression {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Problem type badge */
+.problem-type-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+.problem-type-badge.classification {
+  background: #3498db;
+  color: white;
+}
+
+.problem-type-badge.regression {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Problem type notice */
+.problem-type-notice {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #3498db;
+}
+
+.problem-type-notice p {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.problem-type-notice small {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+
+.problem-type-notice.regression {
+  border-left-color: #e74c3c;
+}
+
+.problem-type-notice.classification {
+  border-left-color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .overview-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .columns-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .intelligent-suggestions {
+    padding: 1rem;
+  }
+  
+  .problem-type-notice {
+    padding: 0.75rem;
+  }
+} 

@@ -1,0 +1,134 @@
+.report-modal {
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.report-content {
+  margin-top: 2rem;
+}
+
+.report-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.report-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.report-meta p {
+  margin: 0;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.report-summary {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.report-summary h3 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+}
+
+.report-summary p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.report-sections {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #ecf0f1;
+}
+
+.section h3 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.content-placeholder {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.content-placeholder ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.content-placeholder li {
+  margin: 0.5rem 0;
+}
+
+.charts-placeholder {
+  margin-top: 1rem;
+}
+
+.charts-placeholder p {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.chart-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #ecf0f1;
+}
+
+.chart-card h4 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.chart-content {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 6px;
+  border: 1px dashed #bdc3c7;
+}
+
+.chart-content p {
+  color: #7f8c8d;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .report-meta {
+    grid-template-columns: 1fr;
+  }
+  
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+} 
