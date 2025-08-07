@@ -1,4 +1,4 @@
-# Unofficial AutoML System
+# AutoML System
 
 A comprehensive AutoML system with AI-powered data analysis, preprocessing, modeling, and chatbot assistance.
 
